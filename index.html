@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AirScroller - 手を汚さずレシピ確認</title>
+    <title>手放しレシピ - 手を汚さずレシピ確認</title>
     <meta name="description" content="料理中でも手を汚さずにレシピをスクロール。ハンドジェスチャーで操作できる革新的な料理アプリ">
     <style>
         * {
@@ -131,7 +132,6 @@
             align-items: center;
             padding: 40px 20px;
             position: relative;
-            overflow: hidden;
         }
 
         .app-demo {
@@ -148,6 +148,12 @@
             font-size: 0.9rem;
             color: #8b4513;
             margin-bottom: 30px;
+        }
+
+        .demo-container {
+            position: relative;
+            width: 220px;
+            height: 300px;
         }
 
         .recipe-demo {
@@ -170,9 +176,17 @@
             border-bottom: 1px solid #eee;
         }
 
-        .recipe-step:nth-child(1) { background: linear-gradient(135deg, #fff5e6 0%, #ffe4cc 100%); }
-        .recipe-step:nth-child(2) { background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%); }
-        .recipe-step:nth-child(3) { background: linear-gradient(135deg, #f0fff0 0%, #e6ffe6 100%); }
+        .recipe-step:nth-child(1) {
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe4cc 100%);
+        }
+
+        .recipe-step:nth-child(2) {
+            background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+        }
+
+        .recipe-step:nth-child(3) {
+            background: linear-gradient(135deg, #f0fff0 0%, #e6ffe6 100%);
+        }
 
         .gesture-icon {
             position: absolute;
@@ -188,16 +202,33 @@
             justify-content: center;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             animation: gestureDemo 3s ease-in-out infinite;
+            z-index: 10;
         }
 
         @keyframes demoScroll {
-            0%, 33% { transform: translateY(0); }
-            66%, 100% { transform: translateY(-60px); }
+
+            0%,
+            33% {
+                transform: translateY(0);
+            }
+
+            66%,
+            100% {
+                transform: translateY(-60px);
+            }
         }
 
         @keyframes gestureDemo {
-            0%, 33% { transform: translateY(0); }
-            66%, 100% { transform: translateY(-20px); }
+
+            0%,
+            33% {
+                transform: translateY(0);
+            }
+
+            66%,
+            100% {
+                transform: translateY(-20px);
+            }
         }
 
         /* 特徴セクション */
@@ -366,12 +397,13 @@
         }
     </style>
 </head>
+
 <body>
     <!-- ヒーローセクション -->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>AirScroller</h1>
+                <h1>手放しレシピ</h1>
                 <p class="subtitle">手を汚さずレシピ確認</p>
                 <p class="description">
                     料理中でも大丈夫！ハンドジェスチャーでレシピをスクロール。<br>
@@ -387,21 +419,23 @@
                 <div class="phone-mockup">
                     <div class="phone-screen">
                         <div class="app-demo">
-                            <h2>AirScroller</h2>
+                            <h2>手放しレシピ</h2>
                             <p>ハンドジェスチャーで操作</p>
-                            <div class="recipe-demo">
-                                <div class="recipe-steps">
-                                    <div class="recipe-step">
-                                        <strong>ステップ 1</strong><br>
-                                        野菜を細かく切る 🥕🥬
-                                    </div>
-                                    <div class="recipe-step">
-                                        <strong>ステップ 2</strong><br>
-                                        フライパンに油を敷く 🍳💧
-                                    </div>
-                                    <div class="recipe-step">
-                                        <strong>ステップ 3</strong><br>
-                                        中火で5分炒める 🔥⏰
+                            <div class="demo-container">
+                                <div class="recipe-demo">
+                                    <div class="recipe-steps">
+                                        <div class="recipe-step">
+                                            <strong>ステップ 1</strong><br>
+                                            野菜を細かく切る 🥕🥬
+                                        </div>
+                                        <div class="recipe-step">
+                                            <strong>ステップ 2</strong><br>
+                                            フライパンに油を敷く 🍳💧
+                                        </div>
+                                        <div class="recipe-step">
+                                            <strong>ステップ 3</strong><br>
+                                            中火で5分炒める 🔥⏰
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="gesture-icon">🤏</div>
@@ -416,7 +450,7 @@
     <!-- 特徴セクション -->
     <section class="features">
         <div class="features-container">
-            <h2>なぜAirScrollerなのか？</h2>
+            <h2>なぜ手放しレシピなのか？</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">✋</div>
@@ -469,11 +503,13 @@
     <!-- 最終CTA -->
     <section class="final-cta" id="download">
         <h2>料理がもっと楽しくなる</h2>
-        <p>今すぐAirScrollerをダウンロードして、<br>ストレスフリーな料理体験を始めましょう</p>
-        <a href="https://apps.apple.com/jp/app/" class="download-button">
+        <p>今すぐ手放しレシピをダウンロードして、<br>ストレスフリーな料理体験を始めましょう</p>
+        <a href="https://apps.apple.com/jp/app/%E6%89%8B%E6%94%BE%E3%81%97%E3%83%AC%E3%82%B7%E3%83%94/id6747370095"
+            class="download-button">
             <span>🍎</span>
             App Storeでダウンロード
         </a>
     </section>
 </body>
+
 </html>
