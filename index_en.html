@@ -152,7 +152,6 @@
 
         .phone-mockup {
             width: 300px;
-            height: 600px;
             background: linear-gradient(135deg, #333 0%, #555 100%);
             border-radius: 40px;
             padding: 20px;
@@ -160,51 +159,54 @@
             position: relative;
             flex-shrink: 0;
             box-sizing: border-box;
+            z-index: 3;
         }
 
         .phone-screen {
             width: 100%;
-            height: 100%;
             background: linear-gradient(135deg, #fff5e6 0%, #ffe4cc 100%);
             border-radius: 25px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 40px 20px;
+            padding: 30px 20px 20px 20px;
             position: relative;
         }
 
         .app-demo {
             text-align: center;
+            width: 100%;
         }
 
         .app-demo h2 {
             font-size: 1.8rem;
             color: #d2691e;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .app-demo p {
             font-size: 0.9rem;
             color: #8b4513;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .demo-container {
             position: relative;
-            width: 220px;
-            height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
         }
 
         .recipe-demo {
             width: 200px;
-            height: 280px;
             background: white;
             border-radius: 15px;
             border: 2px solid #ff6b35;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             position: relative;
+            z-index: 1;
         }
 
         .recipe-steps {
@@ -235,12 +237,12 @@
             justify-content: center;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             animation: gestureDemo 3s ease-in-out infinite;
-            z-index: 10;
+            z-index: 2; /* 変更: recipe-demoより上だが、phone-mockupより下に */
         }
 
         @keyframes demoScroll {
             0%, 33% { transform: translateY(0); }
-            66%, 100% { transform: translateY(-60px); }
+            66%, 100% { transform: translateY(-30px); }
         }
 
         @keyframes gestureDemo {
@@ -419,7 +421,6 @@
 
             .phone-mockup {
                 width: 250px;
-                height: 500px;
             }
 
             .features {
@@ -484,16 +485,14 @@
 
             .phone-mockup {
                 width: 220px;
-                height: 440px;
             }
 
             .demo-container {
-                width: 190px;
+                width: 100%;
             }
 
             .recipe-demo {
                 width: 170px;
-                height: 250px;
             }
 
             .app-demo h2 {
