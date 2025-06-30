@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>手放しレシピ - 手を汚さずレシピ確認</title>
-    <meta name="description" content="料理中でも手を汚さずにレシピをスクロール。ハンドジェスチャーで操作できる革新的な料理アプリ">
+    <title>HandsFree Recipe - Cook Without Touching Your Phone</title>
+    <meta name="description" content="Scroll through recipes with hand gestures while cooking. Revolutionary cooking app that keeps your phone clean and your hands free.">
     <style>
         * {
             margin: 0;
@@ -13,13 +13,13 @@
         }
 
         body {
-            font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: #333;
             overflow-x: hidden;
         }
 
-        /* 言語切り替えリンク */
+        /* Language Switcher */
         .language-switcher {
             position: fixed;
             top: 20px;
@@ -46,7 +46,7 @@
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
 
-        /* ヒーローセクション */
+        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #fff5e6 0%, #ffe4cc 100%);
             min-height: 100vh;
@@ -165,7 +165,7 @@
         }
 
         .app-demo h2 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: #d2691e;
             margin-bottom: 10px;
         }
@@ -200,6 +200,7 @@
         .recipe-step {
             padding: 20px;
             border-bottom: 1px solid #eee;
+            font-size: 0.85rem;
         }
 
         .recipe-step:nth-child(1) { background: linear-gradient(135deg, #fff5e6 0%, #ffe4cc 100%); }
@@ -233,7 +234,7 @@
             66%, 100% { transform: translateY(-20px); }
         }
 
-        /* 特徴セクション */
+        /* Features Section */
         .features {
             padding: 100px 20px;
             background: white;
@@ -286,7 +287,7 @@
             line-height: 1.6;
         }
 
-        /* 使用シーンセクション */
+        /* Use Cases Section */
         .use-cases {
             padding: 100px 20px;
             background: linear-gradient(135deg, #fef9f5 0%, #fff5e6 100%);
@@ -333,7 +334,7 @@
             font-size: 0.95rem;
         }
 
-        /* CTAセクション */
+        /* Final CTA Section */
         .final-cta {
             padding: 80px 20px;
             background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
@@ -372,7 +373,7 @@
             box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
         }
 
-        /* レスポンシブ */
+        /* Responsive */
         @media (max-width: 768px) {
             .hero-content {
                 grid-template-columns: 1fr;
@@ -400,47 +401,47 @@
     </style>
 </head>
 <body>
-    <!-- 言語切り替えリンク -->
+    <!-- Language Switcher -->
     <div class="language-switcher">
-        <a href="index_en.html">English</a>
+        <a href="index.html">日本語</a>
     </div>
 
-    <!-- ヒーローセクション -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>手放しレシピ</h1>
-                <p class="subtitle">手を汚さずレシピ確認</p>
+                <h1>HandsFree Recipe</h1>
+                <p class="subtitle">Cook Without Touching Your Phone</p>
                 <p class="description">
-                    料理中でも大丈夫！ハンドジェスチャーでレシピをスクロール。<br>
-                    濡れた手でスマホを触る必要はもうありません。<br>
-                    空中で手を動かすだけで、簡単にレシピを確認できます。
+                    No more messy phones while cooking! Scroll through recipes with simple hand gestures.<br>
+                    No need to touch your device with wet or dirty hands.<br>
+                    Just move your hand in the air to navigate through your recipes easily.
                 </p>
                 <a href="#download" class="cta-button">
                     <span>📱</span>
-                    今すぐダウンロード
+                    Download Now
                 </a>
             </div>
             <div class="hero-demo">
                 <div class="phone-mockup">
                     <div class="phone-screen">
                         <div class="app-demo">
-                            <h2>手放しレシピ</h2>
-                            <p>ハンドジェスチャーで操作</p>
+                            <h2>HandsFree Recipe</h2>
+                            <p>Gesture Control</p>
                             <div class="demo-container">
                                 <div class="recipe-demo">
                                     <div class="recipe-steps">
                                         <div class="recipe-step">
-                                            <strong>ステップ 1</strong><br>
-                                            野菜を細かく切る 🥕🥬
+                                            <strong>Step 1</strong><br>
+                                            Chop vegetables finely 🥕🥬
                                         </div>
                                         <div class="recipe-step">
-                                            <strong>ステップ 2</strong><br>
-                                            フライパンに油を敷く 🍳💧
+                                            <strong>Step 2</strong><br>
+                                            Heat oil in pan 🍳💧
                                         </div>
                                         <div class="recipe-step">
-                                            <strong>ステップ 3</strong><br>
-                                            中火で5分炒める 🔥⏰
+                                            <strong>Step 3</strong><br>
+                                            Stir-fry for 5 minutes 🔥⏰
                                         </div>
                                     </div>
                                 </div>
@@ -453,66 +454,66 @@
         </div>
     </section>
 
-    <!-- 特徴セクション -->
+    <!-- Features Section -->
     <section class="features">
         <div class="features-container">
-            <h2>なぜ手放しレシピなのか？</h2>
+            <h2>Why HandsFree Recipe?</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">✋</div>
-                    <h3>手を汚さない</h3>
-                    <p>料理中で手が濡れていても、空中でのジェスチャーだけでレシピをスクロール。スマホが汚れる心配もありません。</p>
+                    <h3>Keep Your Hands Clean</h3>
+                    <p>Navigate recipes with air gestures even when your hands are wet or dirty. No more worrying about contaminating your phone.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">⚡</div>
-                    <h3>瞬間操作</h3>
-                    <p>手を洗う時間も、タオルで拭く時間も不要。思い立った瞬間にレシピを確認できます。</p>
+                    <h3>Instant Access</h3>
+                    <p>No need to wash hands or find a towel. Check your recipe the moment you need it with simple hand movements.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎯</div>
-                    <h3>直感的</h3>
-                    <p>複雑な操作は一切なし。自然な手の動きだけで、誰でも簡単に使えます。</p>
+                    <h3>Intuitive Control</h3>
+                    <p>No complex gestures needed. Natural hand movements that anyone can master in seconds.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 使用シーンセクション -->
+    <!-- Use Cases Section -->
     <section class="use-cases">
         <div class="use-cases-container">
-            <h2>こんな時に大活躍</h2>
+            <h2>Perfect for Every Cooking Situation</h2>
             <div class="scenarios">
                 <div class="scenario">
                     <div class="scenario-emoji">🥘</div>
-                    <h3>炒め物の最中</h3>
-                    <p>フライパンから目が離せない時も、手の動きだけで次の工程を確認</p>
+                    <h3>Stir-Frying</h3>
+                    <p>Keep stirring while checking the next step without missing a beat</p>
                 </div>
                 <div class="scenario">
                     <div class="scenario-emoji">🍞</div>
-                    <h3>パン作り</h3>
-                    <p>手が小麦粉だらけでも、レシピの確認はお手のもの</p>
+                    <h3>Baking</h3>
+                    <p>Flour-covered hands? No problem. Navigate your recipe with ease</p>
                 </div>
                 <div class="scenario">
                     <div class="scenario-emoji">🐟</div>
-                    <h3>魚の下処理</h3>
-                    <p>生魚を触った手でスマホを操作する必要なし</p>
+                    <h3>Handling Raw Meat</h3>
+                    <p>No cross-contamination. Check cooking instructions without touching anything</p>
                 </div>
                 <div class="scenario">
                     <div class="scenario-emoji">🥗</div>
-                    <h3>サラダ作り</h3>
-                    <p>野菜を切りながら、ドレッシングのレシピをサッと確認</p>
+                    <h3>Meal Prep</h3>
+                    <p>Quickly reference dressing recipes while chopping vegetables</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 最終CTA -->
+    <!-- Final CTA -->
     <section class="final-cta" id="download">
-        <h2>料理がもっと楽しくなる</h2>
-        <p>今すぐ手放しレシピをダウンロードして、<br>ストレスフリーな料理体験を始めましょう</p>
-        <a href="https://apps.apple.com/jp/app/%E6%89%8B%E6%94%BE%E3%81%97%E3%83%AC%E3%82%B7%E3%83%94/id6747370095" class="download-button">
+        <h2>Make Cooking More Enjoyable</h2>
+        <p>Download HandsFree Recipe now and start your<br>stress-free cooking experience today</p>
+        <a href="https://apps.apple.com/us/app/%E6%89%8B%E6%94%BE%E3%81%97%E3%83%AC%E3%82%B7%E3%83%94/id6747370095" class="download-button">
             <span>🍎</span>
-            App Storeでダウンロード
+            Download on App Store
         </a>
     </section>
 </body>
